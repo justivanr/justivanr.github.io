@@ -13,10 +13,10 @@
 #---------------------------
 
 # Icon for browser tab
-favicon: /img/fluid.png
+favicon: /img/killua.png
 
 # Icon for Apple touch
-apple_touch_icon: /img/fluid.png
+apple_touch_icon: /img/killua.png
 
 # Title separator in browser tab, eg: article - site
 tab_title_separator: " - "

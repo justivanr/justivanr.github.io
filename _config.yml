@@ -8,13 +8,13 @@ subtitle: "Foolin fools fooling"
 description: "Ayo Ivan is Here"
 keywords:
 author: Ivan Rinaldi
-language: en
+language: en-EN
 timezone: "UTC"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-baseurl: "/blogjekyll"
-url: "https://justivanr.github.io"
+url: https://justivanr.github.io
+root: /
 permalink: :title/
 # permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,7 +26,6 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-# archive_dir: archives
 archive_dir: publications
 category_dir: categories
 code_dir: downloads/code
@@ -105,4 +104,7 @@ remote_theme: fluid-dev/hexo-theme-fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: "git"
+  repo: git@github.com:justivanr/justivanr.github.io
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
