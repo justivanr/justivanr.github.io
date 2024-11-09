@@ -13,7 +13,7 @@ timezone: "UTC"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://justivanr.github.io/project
+url: https://justivanr.github.io
 permalink: :title/
 # permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -97,19 +97,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: "fluid"
-# remote_theme: fluid-dev/hexo-theme-fluid
+theme: hexo-theme-fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: "git"
-#   repo:
-#     github:
-#       url: "git@github.com:justivanr/justivanr.github.io.git"
-#       branch: master
-
 deploy:
   type: git
-  repository:
-    github: https://github.com/justivanr/justivanr.github.io
+  repo: https://github.com/justivanr/justivanr.github.io.git
+  branch: master
