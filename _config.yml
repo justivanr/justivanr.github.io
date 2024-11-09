@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ivan's Blog
-subtitle: "Ivan's Blog"
-description: "Ivan's Blog"
+title: Ivan's Fooling Around
+subtitle: "Foolin fools fooling"
+description: "Guess what? I'm fooling around!"
 keywords:
 author: Ivan Rinaldi
 language: en
-timezone: ""
+timezone: "UTC"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://justivanr.github.io/project
-permalink: :year/:month/:day/:title/
+permalink: :title/
+# permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -24,7 +25,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: publications
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -96,11 +97,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: redefine
+theme: "fluid"
+# remote_theme: fluid-dev/hexo-theme-fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository:
-    github: https://github.com/justivanr/justivanr.github.io
+  type: "git"
+  repo:
+    github:
+      url: "git@github.com:justivanr/justivanr.github.io.git"
+      branch: master
