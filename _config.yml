@@ -108,4 +108,4 @@ deploy:
   repo:
     github:
       url: "git@github.com:justivanr/justivanr.github.io.git"
-      branch: master
+      branch: gh-pages
