@@ -25,7 +25,7 @@ date: 2024-11-03 18:43:20
   }
 
   .music {
-    background-color: #FF5733;
+    background-color: #2274A5;
   }
   .videogames {
     background-color: #C70039;
