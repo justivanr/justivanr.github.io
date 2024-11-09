@@ -72,7 +72,7 @@ My research interests include:
 
 ## Hobbies 🕹️
 
-If im not doing anything concerning the above topics, I might be into one of these.
+When I'm not immersed in my research, you can find me enjoying one of these activities.
 
 <div style="justify-content: center; margin-top: -0.8em; font-weight: bold; margin-top: 0.5em;">
   
