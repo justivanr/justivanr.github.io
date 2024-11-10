@@ -5,7 +5,7 @@ conference: "AI for Visual Arts Workshop (AI4VA) @ ECCV in Milan, 2024"
 paper_url: https://arxiv.org/abs/2410.04906
 repo: https://github.com/justivanr/art2mus_
 index_img: "../img/Art2Mus_Architecture.png"
-category: Generative AI
+category: Generative AI, Conditioned Music Generation, Multimodal Deep Learning
 sticky: 20
 date: 2024-09
 ---

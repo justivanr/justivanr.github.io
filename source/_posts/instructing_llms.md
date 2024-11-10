@@ -5,7 +5,7 @@ conference: "RecSys in Bari, 2024"
 paper_url: https://dl.acm.org/doi/10.1145/3640457.3688137
 repo: https://github.com/petruzzellialessandro/RecSys_2024_CDR_LLM
 index_img: "../img/recsys.png"
-category: Recommender System
+category: Recommender System, Cross Domain Recommendation, Large Language Models
 sticky: 10
 date: 2024-10
 ---
