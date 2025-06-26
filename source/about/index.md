@@ -40,9 +40,9 @@ date: 2024-11-03 18:43:20
 
 <div style="text-align:center;">
 
-Hello there! I’m Ivan Rinaldi, a PhD student at the University of Bari Aldo Moro, based in Bari (BA), Apulia, Italy. I am currently working in the [CILab](https://sites.google.com/site/cilabuniba/home) laboratory, pursuing a PhD on "Advanced Generative Models for Conversion between Images, Text, and Audio," co-funded by [AIVA](https://aivb.ai/en/home/).
+Hello there! I’m Ivan Rinaldi, a **PhD student** at the University of Bari Aldo Moro, based in Bari (BA), Apulia, Italy. I am currently working in the [CILab](https://sites.google.com/site/cilabuniba/home) laboratory, pursuing a PhD on **"Advanced Generative Models for Conversion between Images, Text, and Audio"**, co-funded by [AIVB](https://aivb.ai/en/home/).
 
-In July 2024, I earned my Master's degree in Computer Science (AI curriculum) at the [University of Bari Aldo Moro](https://www.uniba.it/en). My thesis focused on **Generative AI**, specifically Diffusion Models and conditioned music generation from artworks.
+In July 2024, I earned my **Master's degree** in Computer Science (AI curriculum) at the [University of Bari Aldo Moro](https://www.uniba.it/en). My thesis focused on **Generative AI**, specifically diffusion models and conditioned music generation from artworks.
 
 ## Research Interests 🔍
 
@@ -97,6 +97,8 @@ When I'm not immersed in my research, you can find me enjoying one of these acti
 # Stay up-to-date with my work! 🚀
 
 </div>
+
+- **May 2025**: The proceedings of my work [Art2Mus](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11) have been published by Springer! Feel free to check it out! ✨
 
 - **October 2024**: We published a preprint of our work [Art2Mus](https://arxiv.org/abs/2410.04906), which was recently presented at the [AI4VA Workshop](https://sites.google.com/view/ai4vaeccv2024) during [ECCV 2024](https://eccv.ecva.net/) in Milan this September! 🇮🇹 😎
 - **August 2024**: Our work [Art2Mus](https://justivanr.github.io/publications/art2mus_publication/) was accepted at the [AI4VA Workshop](https://sites.google.com/view/ai4vaeccv2024) at [ECCV 2024](https://eccv.ecva.net/) in Milan! 🇮🇹
