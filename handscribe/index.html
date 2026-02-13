@@ -16,28 +16,28 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Alessandro Petruzzelli, Cataldo Musto, Lucrezia Laraspata, Ivan Rinaldi, Marco de Gemmis, Pasquale Lops, and Giovanni Semeraro">
+  <meta name="author" content="Emanuele Colonna and Ivan Rinaldi and David Landi and Gennaro Vessio and Giovanna Castellano">
   <meta name="keywords" content="">
   
-    <meta name="description" content="We present a method for using large language models (LLMs) to provide explainable cross-domain recommendations despite data scarcity. It involves instructing an LLM, creating personalized prompts, and">
+    <meta name="description" content="Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚">
-<meta property="og:url" content="https://justivanr.github.io/instructing_llms/index.html">
+<meta property="og:title" content="🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻">
+<meta property="og:url" content="https://justivanr.github.io/handscribe/index.html">
 <meta property="og:site_name" content="Ivan&#39;s Fooling Around">
-<meta property="og:description" content="We present a method for using large language models (LLMs) to provide explainable cross-domain recommendations despite data scarcity. It involves instructing an LLM, creating personalized prompts, and">
+<meta property="og:description" content="Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costl">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://justivanr.github.io/img/recsys.png">
-<meta property="article:published_time" content="2024-10-01T02:00:00.000Z">
-<meta property="article:modified_time" content="2024-11-10T16:17:50.166Z">
+<meta property="og:image" content="https://justivanr.github.io/img/Handscribe_architecture.png">
+<meta property="article:published_time" content="2026-02-01T01:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-13T11:09:41.075Z">
 <meta property="article:author" content="Ivan Rinaldi">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://justivanr.github.io/img/recsys.png">
+<meta name="twitter:image" content="https://justivanr.github.io/img/Handscribe_architecture.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚 - Ivan&#39;s Fooling Around</title>
+  <title>🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻 - Ivan&#39;s Fooling Around</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -179,7 +179,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚"></span>
+            <span id="subtitle" data-typed-text="🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻"></span>
           
         </div>
 
@@ -190,8 +190,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-10-01 02:00" pubdate>
-          October, 2024
+        <time datetime="2026-02-01 01:00" pubdate>
+          February, 2026
         </time>
       </span>
     
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8 words
+          33 words
         
       </span>
     
@@ -222,43 +222,23 @@
     <div class="post-meta-row">
         <span class="post-meta">
             <i class="fas fa-users"></i>
-            Alessandro Petruzzelli, Cataldo Musto, Lucrezia Laraspata, <strong>Ivan Rinaldi</strong>, Marco de Gemmis, Pasquale Lops, and Giovanni Semeraro
+            Emanuele Colonna and <strong>Ivan Rinaldi</strong> and David Landi and Gennaro Vessio and Giovanna Castellano
         </span>
     </div>
   
   
   
+
+  
       <div class="post-meta-row">
           <span class="post-meta">
-              <i class="fa-solid fa-newspaper"></i>
-              RecSys in Bari, 2024
+              <i class="fas fa-map-marker-alt"></i>
+              AI for Visual Arts Workshop (AI4VA) @ ECCV in Milan, 2024
           </span>
       </div>
   
 
-  
 
-
-  
-    <div class="post-meta-row">
-        <span class="post-meta">
-
-            <a href="https://dl.acm.org/doi/10.1145/3640457.3688137" target="_blank" rel="noopener">
-                <i class="fa-solid fa-file"></i>
-                Paper
-            </a>
-
-            
-
-            <a href="https://github.com/petruzzellialessandro/RecSys_2024_CDR_LLM" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i>
-              Code
-          </a>
-
-          
-          
-        </span>
-    </div>
   
 
     
@@ -293,13 +273,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</h1>
+            <h1 id="seo-header">🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</h1>
             
             
               <div class="markdown-body">
                 
-                <p>We present a method for using large language models (LLMs) to provide explainable cross-domain recommendations despite data scarcity. It involves instructing an LLM, creating personalized prompts, and processing responses to generate and explain recommendations. Experimental results show this approach outperforms existing methods.</p>
-<p><img src="/../img/recsys.png" srcset="/img/koi.gif" lazyload></p>
+                <p>Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costly, language-dependent, and often lossy, prompting growing interest in gloss-free alternatives. This paper introduces Handscribe, a novel two-stage framework for gloss-free sign language translation and gloss sequence generation. Handscribe first translates continuous sign language videos into written language sentences using a lightweight decoder built atop SlowFast-based spatiotemporal features and a frozen mBART model. Then, in the second stage, it generates gloss sequences from these sentences using a Large Language Model (LLaMa3.1-8B-Instruct) that has been fine-tuned with weak supervision. Our experiments on PHOENIX-2014-T and Wav2Gloss Fieldwork demonstrate strong translation performance and state-of-the-art multilingual gloss generation, even in zero-shot settings. The proposed framework reduces annotation bottlenecks while maintaining flexibility and interpretability, paving the way for scalable and inclusive sign language technologies.</p>
+<p><img src="/../img/Handscribe_Architecture.png" srcset="/img/koi.gif" lazyload></p>
 
                 
               </div>
@@ -318,7 +298,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Recommender-System-Cross-Domain-Recommendation-Large-Language-Models/" class="category-chain-item">Recommender System, Cross Domain Recommendation, Large Language Models</a>
+  <a href="/categories/Sign-Language-Translation-SlowFast-Network-Large-Language-Models-Accessibility-Technologies/" class="category-chain-item">Sign Language Translation, SlowFast Network, Large Language Models, Accessibility Technologies</a>
   
   
 
@@ -338,20 +318,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</div>
-      <div>https://justivanr.github.io/instructing_llms/</div>
+      <div>🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</div>
+      <div>https://justivanr.github.io/handscribe/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>Author</div>
-          <div>Alessandro Petruzzelli, Cataldo Musto, Lucrezia Laraspata, Ivan Rinaldi, Marco de Gemmis, Pasquale Lops, and Giovanni Semeraro</div>
+          <div>Emanuele Colonna and Ivan Rinaldi and David Landi and Gennaro Vessio and Giovanna Castellano</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>October 1, 2024</div>
+          <div>February 1, 2026</div>
         </div>
       
       
@@ -383,18 +363,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/handscribe/" title="🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/art2mus/" title="🖼️ Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation 🎵">
-                        <span class="hidden-mobile">🖼️ Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation 🎵</span>
+                      <a href="/instructing_llms/" title="Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚">
+                        <span class="hidden-mobile">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
