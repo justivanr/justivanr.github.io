@@ -1275,7 +1275,6 @@ i.iconfont {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   color: #555;
-  margin-left: 8px;
 }
 .date-label {
   display: inline-block;
@@ -1286,7 +1285,6 @@ i.iconfont {
   background-color: #b3e5fc;
   border: 1px solid #0288d1;
   color: #01579b;
-  margin-left: 8px;
 }
 .date-label i {
   margin-right: 4px;
