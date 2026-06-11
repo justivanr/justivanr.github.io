@@ -2,6 +2,7 @@
 title: "🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻"
 author: "Emanuele Colonna and Ivan Rinaldi and David Landi and Gennaro Vessio and Giovanna Castellano"
 journal: "Computer Vision and Image Understanding (CVIU)"
+short_journal: "CVIU"
 paper_url: "https://www.sciencedirect.com/science/article/pii/S107731422600041X"
 repo: https://github.com/colonnaemanuele/Handscribe
 index_img: "../img/Handscribe_Architecture.png"
