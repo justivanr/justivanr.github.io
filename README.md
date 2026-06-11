@@ -2,6 +2,8 @@
 
 Hope you have a lovely stay! This is my [personal website](justivanr.github.io)!
 
+I am currently using Hexo Fluid.
+
 ## Deploy your changes using Hexo
 
 When you make changes to your website, start by running:
