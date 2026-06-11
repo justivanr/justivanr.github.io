@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/project/img/killua.jpg">
-  <link rel="icon" href="/project/img/killua.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/killua.jpg">
+  <link rel="icon" href="/img/killua.jpg">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻">
-<meta property="og:url" content="https://justivanr.github.io/project/handscribe/index.html">
+<meta property="og:url" content="https://justivanr.github.io/handscribe/index.html">
 <meta property="og:site_name" content="Ivan&#39;s Fooling Around">
 <meta property="og:description" content="Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costl">
 <meta property="og:locale" content="en_US">
@@ -61,12 +61,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 
-<link  rel="stylesheet" href="/project/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/project/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/project/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -74,15 +74,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"justivanr.github.io","root":"/project/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/koi.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/project/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"justivanr.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/koi.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/project/js/utils.js" ></script>
-  <script  src="/project/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -99,7 +99,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/project/">
+    <a class="navbar-brand" href="/">
       <strong>Ivan&#39;s Multimodal Zoo</strong>
     </a>
 
@@ -118,7 +118,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/project/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>Home</span>
               </a>
@@ -130,7 +130,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/project/publications/" target="_self">
+              <a class="nav-link" href="/publications/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>Publications</span>
               </a>
@@ -142,7 +142,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/project/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>About Me</span>
               </a>
@@ -172,7 +172,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/project/img/night_1.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/night_1.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -301,7 +301,7 @@
               <div class="markdown-body">
                 
                 <p>Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costly, language-dependent, and often lossy, prompting growing interest in gloss-free alternatives. This paper introduces Handscribe, a novel two-stage framework for gloss-free sign language translation and gloss sequence generation. Handscribe first translates continuous sign language videos into written language sentences using a lightweight decoder built atop SlowFast-based spatiotemporal features and a frozen mBART model. Then, in the second stage, it generates gloss sequences from these sentences using a Large Language Model (LLaMa3.1-8B-Instruct) that has been fine-tuned with weak supervision. Our experiments on PHOENIX-2014-T and Wav2Gloss Fieldwork demonstrate strong translation performance and state-of-the-art multilingual gloss generation, even in zero-shot settings. The proposed framework reduces annotation bottlenecks while maintaining flexibility and interpretability, paving the way for scalable and inclusive sign language technologies.</p>
-<p><img src="/project/../img/Handscribe_Architecture.png" srcset="/project/img/koi.gif" lazyload></p>
+<p><img src="/../img/Handscribe_Architecture.png" srcset="/img/koi.gif" lazyload></p>
 
                 
               </div>
@@ -320,7 +320,7 @@
     
       <span class="category-chain">
         
-  <a href="/project/categories/Sign-Language-Translation-SlowFast-Network-Large-Language-Models-Accessibility-Technologies/" class="category-chain-item">Sign Language Translation, SlowFast Network, Large Language Models, Accessibility Technologies</a>
+  <a href="/categories/Sign-Language-Translation-SlowFast-Network-Large-Language-Models-Accessibility-Technologies/" class="category-chain-item">Sign Language Translation, SlowFast Network, Large Language Models, Accessibility Technologies</a>
   
   
 
@@ -341,7 +341,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</div>
-      <div>https://justivanr.github.io/project/handscribe/</div>
+      <div>https://justivanr.github.io/handscribe/</div>
     </div>
     <div class="license-meta">
       
@@ -389,12 +389,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/art2mus_large/" title="🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/project/art2mus_large/" title="🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶">
-                        <span class="hidden-mobile">🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶</span>
+                      <a href="/instructing_llms/" title="Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚">
+                        <span class="hidden-mobile">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -548,8 +554,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/project/js/events.js" ></script>
-<script  src="/project/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -571,7 +577,7 @@
 
 
   
-    <script  src="/project/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -670,7 +676,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/project/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -680,7 +686,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/project/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

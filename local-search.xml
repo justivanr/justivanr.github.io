@@ -4,30 +4,11 @@
   
   
   <entry>
-    <title>🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</title>
-    <link href="/project/handscribe/"/>
-    <url>/project/handscribe/</url>
-    
-    <content type="html"><![CDATA[<p>Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costly, language-dependent, and often lossy, prompting growing interest in gloss-free alternatives. This paper introduces Handscribe, a novel two-stage framework for gloss-free sign language translation and gloss sequence generation. Handscribe first translates continuous sign language videos into written language sentences using a lightweight decoder built atop SlowFast-based spatiotemporal features and a frozen mBART model. Then, in the second stage, it generates gloss sequences from these sentences using a Large Language Model (LLaMa3.1-8B-Instruct) that has been fine-tuned with weak supervision. Our experiments on PHOENIX-2014-T and Wav2Gloss Fieldwork demonstrate strong translation performance and state-of-the-art multilingual gloss generation, even in zero-shot settings. The proposed framework reduces annotation bottlenecks while maintaining flexibility and interpretability, paving the way for scalable and inclusive sign language technologies.</p><p><img src="/project/../img/Handscribe_Architecture.png"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Sign Language Translation, SlowFast Network, Large Language Models, Accessibility Technologies</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶</title>
-    <link href="/project/art2mus_large/"/>
-    <url>/project/art2mus_large/</url>
+    <link href="/art2mus_large/"/>
+    <url>/art2mus_large/</url>
     
-    <content type="html"><![CDATA[<p>Music generation has advanced markedly through multimodal deep learning, enabling models to synthesize audio from text and, more recently, from images. However, existing image-conditioned systems suffer from two fundamental limitations: (i) they are typically trained on natural photographs, limiting their ability to capture the richer semantic, stylistic, and cultural content of artworks; and (ii) most rely on an image-to-text conversion stage, using language as a semantic shortcut that simplifies conditioning but prevents direct visual-to-audio learning. Motivated by these gaps, we introduce ArtSound, a large-scale multimodal dataset of 105,884 artwork-music pairs enriched with dual-modality captions, obtained by extending ArtGraph and the Free Music Archive. We further propose ArtToMus, the first framework explicitly designed for direct artwork-to-music generation, which maps digitized artworks to music without image-to-text translation or language-based semantic supervision. The framework projects visual embeddings into the conditioning space of a latent diffusion model, enabling music synthesis guided solely by visual information. Experimental results show that ArtToMus generates musically coherent and stylistically consistent outputs that reflect salient visual cues of the source artworks. While absolute alignment scores remain lower than those of text-conditioned systems-as expected given the substantially increased difficulty of removing linguistic supervision-ArtToMus achieves competitive perceptual quality and meaningful cross-modal correspondence. This work establishes direct visual-to-music generation as a distinct and challenging research direction, and provides resources that support applications in multimedia art, cultural heritage, and AI-assisted creative practice.</p><p><img src="/project/../img/Art2MusReimagined_Architecture.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>Music generation has advanced markedly through multimodal deep learning, enabling models to synthesize audio from text and, more recently, from images. However, existing image-conditioned systems suffer from two fundamental limitations: (i) they are typically trained on natural photographs, limiting their ability to capture the richer semantic, stylistic, and cultural content of artworks; and (ii) most rely on an image-to-text conversion stage, using language as a semantic shortcut that simplifies conditioning but prevents direct visual-to-audio learning. Motivated by these gaps, we introduce ArtSound, a large-scale multimodal dataset of 105,884 artwork-music pairs enriched with dual-modality captions, obtained by extending ArtGraph and the Free Music Archive. We further propose ArtToMus, the first framework explicitly designed for direct artwork-to-music generation, which maps digitized artworks to music without image-to-text translation or language-based semantic supervision. The framework projects visual embeddings into the conditioning space of a latent diffusion model, enabling music synthesis guided solely by visual information. Experimental results show that ArtToMus generates musically coherent and stylistically consistent outputs that reflect salient visual cues of the source artworks. While absolute alignment scores remain lower than those of text-conditioned systems-as expected given the substantially increased difficulty of removing linguistic supervision-ArtToMus achieves competitive perceptual quality and meaningful cross-modal correspondence. This work establishes direct visual-to-music generation as a distinct and challenging research direction, and provides resources that support applications in multimedia art, cultural heritage, and AI-assisted creative practice.</p><p><img src="/../img/Art2MusReimagined_Architecture.png"></p>]]></content>
     
     
     <categories>
@@ -42,11 +23,30 @@
   
   
   <entry>
-    <title>Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</title>
-    <link href="/project/instructing_llms/"/>
-    <url>/project/instructing_llms/</url>
+    <title>🖐🏻 Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🤌🏻</title>
+    <link href="/handscribe/"/>
+    <url>/handscribe/</url>
     
-    <content type="html"><![CDATA[<p>We present a method for using large language models (LLMs) to provide explainable cross-domain recommendations despite data scarcity. It involves instructing an LLM, creating personalized prompts, and processing responses to generate and explain recommendations. Experimental results show this approach outperforms existing methods.</p><p><img src="/project/../img/recsys.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>Sign language translation systems traditionally rely on intermediate gloss representations to bridge the gap between visual input and written language output. However, manual gloss annotation is costly, language-dependent, and often lossy, prompting growing interest in gloss-free alternatives. This paper introduces Handscribe, a novel two-stage framework for gloss-free sign language translation and gloss sequence generation. Handscribe first translates continuous sign language videos into written language sentences using a lightweight decoder built atop SlowFast-based spatiotemporal features and a frozen mBART model. Then, in the second stage, it generates gloss sequences from these sentences using a Large Language Model (LLaMa3.1-8B-Instruct) that has been fine-tuned with weak supervision. Our experiments on PHOENIX-2014-T and Wav2Gloss Fieldwork demonstrate strong translation performance and state-of-the-art multilingual gloss generation, even in zero-shot settings. The proposed framework reduces annotation bottlenecks while maintaining flexibility and interpretability, paving the way for scalable and inclusive sign language technologies.</p><p><img src="/../img/Handscribe_Architecture.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Sign Language Translation, SlowFast Network, Large Language Models, Accessibility Technologies</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🎥💿📚</title>
+    <link href="/instructing_llms/"/>
+    <url>/instructing_llms/</url>
+    
+    <content type="html"><![CDATA[<p>We present a method for using large language models (LLMs) to provide explainable cross-domain recommendations despite data scarcity. It involves instructing an LLM, creating personalized prompts, and processing responses to generate and explain recommendations. Experimental results show this approach outperforms existing methods.</p><p><img src="/../img/recsys.png"></p>]]></content>
     
     
     <categories>
@@ -62,10 +62,10 @@
   
   <entry>
     <title>🖼️ Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation 🎵</title>
-    <link href="/project/art2mus/"/>
-    <url>/project/art2mus/</url>
+    <link href="/art2mus/"/>
+    <url>/art2mus/</url>
     
-    <content type="html"><![CDATA[<p>Artificial Intelligence has transformed music creation by using generative models that respond to textual or visual prompts. Current image-to-music models are limited to basic images, unable to handle complex digital artworks. To address this gap, we propose Art2Mus, a novel model designed to create music from digitized artworks or text inputs. Art2Mus extends the AudioLDM 2 architecture, a text-to-audio model, and employs our newly curated datasets, created via ImageBind, which pair digitized artworks with music. Experimental results show that Art2Mus generates music that resonates with the input stimuli, suggesting potential applications in multimedia art, interactive installations, and AI-driven creative tools.</p><p><img src="/project/../img/Art2Mus_Architecture.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>Artificial Intelligence has transformed music creation by using generative models that respond to textual or visual prompts. Current image-to-music models are limited to basic images, unable to handle complex digital artworks. To address this gap, we propose Art2Mus, a novel model designed to create music from digitized artworks or text inputs. Art2Mus extends the AudioLDM 2 architecture, a text-to-audio model, and employs our newly curated datasets, created via ImageBind, which pair digitized artworks with music. Experimental results show that Art2Mus generates music that resonates with the input stimuli, suggesting potential applications in multimedia art, interactive installations, and AI-driven creative tools.</p><p><img src="/../img/Art2Mus_Architecture.png"></p>]]></content>
     
     
     <categories>
