@@ -1,0 +1,195 @@
+<%
+if (theme.index.slogan.enable) {
+page.subtitle = theme.index.slogan.text || config.subtitle || ''
+}
+page.banner_img = theme.index.banner_img
+page.banner_img_height = theme.index.banner_img_height
+page.banner_mask_alpha = theme.index.banner_mask_alpha
+
+var visible_posts = page.posts.slice(0, 3);
+var hidden_posts = page.posts.slice(3);
+%>
+
+<!-- FIRST 3 POSTS -->
+
+<% visible_posts.each(function (post) { %>
+
+  <div class="row mx-auto index-card">
+    <% var post_url = url_for(post.path), index_img = post.index_img || theme.post.default_index_img %>
+    <% if (index_img) { %>
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+          <img src="<%= url_for(index_img) %>" alt="<%= post.title %>">
+        </a>
+      </div>
+    <% } %>
+    <article class="col-12 col-md-<%= index_img ? '8' : '12' %> mx-auto index-info">
+      <h2 class="index-header">
+        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+          <%= post.title %>
+        </a>
+      </h2>
+
+  <div class="sub-meta">
+
+    <% if (post.conference || post.journal) { %>
+    <div class="paper-label <%= post.conference ? 'conference' : (post.journal ? 'journal' : '') %>">
+      <span><%= post.conference ? "📓 Conference Paper" : (post.journal ? "📰 Journal Paper" : "") %></span>
+    </div>
+    <% } %>
+
+    <% if (post.short_conf) { %>
+      <div class="paper-label short-conf-label">
+        <span>📍 <%= post.short_conf %></span>
+      </div>
+    <% } %>
+
+    <% if (post.short_journal) { %>
+      <div class="paper-label short-journal-label">
+        <span>📍 <%= post.short_journal %></span>
+      </div>
+    <% } %>
+
+    <% if (theme.index.post_meta.date) { %>
+      <div class="date-label">
+        <i class="iconfont icon-date"></i>
+        <time datetime="<%= full_date(post.date, 'YYYY-MM-DD HH:mm') %>" pubdate>
+            <%- date(post.date, 'MMMM YYYY') %>
+        </time>
+      </div>
+    <% } %>
+  </div>
+
+  <h6 style="margin-bottom: 0.25rem; margin-top: 0.25rem;">
+    <i class="fas fa-users"></i>
+    <% if (post.author) { %>
+      <small><%- post.author.replace('Ivan Rinaldi', '<strong>Ivan Rinaldi</strong>') %></small>
+    <% } %>
+  </h6>
+
+  <% var excerpt = post.description || post.excerpt || (theme.index.auto_excerpt.enable && !post.encrypt && post.content) %>
+  <a class="index-excerpt <%= index_img ? '' : 'index-excerpt__noimg' %>" href="<%= post_url %>">
+    <div>
+      <%- strip_html(excerpt).substring(0, 200).trim().replace(/\n/g, ' ') %>...
+    </div>
+  </a>
+
+  <div class="index-btm post-metas">
+    <% if (theme.index.post_meta.category && post.categories.length > 0) { %>
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        <%- partial('_partials/category-chains', { categories: post.categories, limit: 1 }) %>
+      </div>
+    <% } %>
+    <% if (theme.index.post_meta.tag && post.tags.length > 0) { %>
+      <div class="post-meta">
+        <i class="iconfont icon-tags"></i>
+        <% post.tags.each(function(tag){ %>
+          <a href="<%= url_for(tag.path) %>">#<%- tag.name %></a>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
+</article>
+
+  </div>
+<% }) %>
+
+<!-- HIDDEN POSTS -->
+
+<div id="more-posts" style="display: none;">
+<% hidden_posts.each(function (post) { %>
+  <div class="row mx-auto index-card">
+    <% var post_url = url_for(post.path), index_img = post.index_img || theme.post.default_index_img %>
+    <% if (index_img) { %>
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="<%= post_url %>">
+          <img src="<%= url_for(index_img) %>" alt="<%= post.title %>">
+        </a>
+      </div>
+    <% } %>
+    <article class="col-12 col-md-<%= index_img ? '8' : '12' %> mx-auto index-info">
+      <h2 class="index-header">
+        <a href="<%= post_url %>"><%= post.title %></a>
+      </h2>
+
+      <div class="sub-meta">
+        <div class="paper-label <%= post.conference ? 'conference' : (post.journal ? 'journal' : '') %>">
+          <span><%= post.conference ? "📓 Conference Paper" : (post.journal ? "📰 Journal Paper" : "") %></span>
+        </div>
+
+        <% if (post.short_conf) { %>
+          <div class="paper-label short-conf-label">
+            <span>📍 <%= post.short_conf %></span>
+          </div>
+        <% } %>
+
+        <% if (theme.index.post_meta.date) { %>
+          <div class="date-label">
+            <i class="iconfont icon-date"></i>
+            <time datetime="<%= full_date(post.date, 'YYYY-MM-DD HH:mm') %>">
+              <%- date(post.date, 'MMMM YYYY') %>
+            </time>
+          </div>
+        <% } %>
+      </div>
+
+      <h6 style="margin-bottom: 0.25rem; margin-top: 0.25rem;">
+        <i class="fas fa-users"></i>
+        <% if (post.author) { %>
+          <small><%- post.author.replace('Ivan Rinaldi', '<strong>Ivan Rinaldi</strong>') %></small>
+        <% } %>
+      </h6>
+
+      <% var excerpt = post.description || post.excerpt || (theme.index.auto_excerpt.enable && !post.encrypt && post.content) %>
+      <a class="index-excerpt <%= index_img ? '' : 'index-excerpt__noimg' %>" href="<%= post_url %>">
+        <div>
+          <%- strip_html(excerpt).substring(0, 200).trim().replace(/\n/g, ' ') %>...
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        <% if (theme.index.post_meta.category && post.categories.length > 0) { %>
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            <%- partial('_partials/category-chains', { categories: post.categories, limit: 1 }) %>
+          </div>
+        <% } %>
+        <% if (theme.index.post_meta.tag && post.tags.length > 0) { %>
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            <% post.tags.each(function(tag){ %>
+              <a href="<%= url_for(tag.path) %>">#<%- tag.name %></a>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
+    </article>
+  </div>
+<% }) %>
+</div>
+
+<!-- BUTTON -->
+
+<% if (hidden_posts.length > 0) { %>
+
+  <div class="text-center mt-4">
+    <button id="show-more-btn" class="btn btn-outline-secondary">
+      Show More
+    </button>
+  </div>
+<% } %>
+
+<!-- SCRIPT -->
+
+<script>
+  const btn = document.getElementById('show-more-btn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      document.getElementById('more-posts').style.display = 'block';
+      btn.style.display = 'none';
+    });
+  }
+</script>
+
+<%- partial('_partials/paginator') %>
