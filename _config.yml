@@ -104,5 +104,5 @@ theme: hexo-theme-fluid
 deploy:
   type: git
   repo: https://github.com/justivanr/justivanr.github.io
-  branch: gh-pages
+  branch: master
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
