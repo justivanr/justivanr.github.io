@@ -98,13 +98,21 @@ When I'm not immersed in my research, you can find me enjoying one of these acti
 
 </div>
 
-- **May 2025**: The proceedings of my work [Art2Mus](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11) have been published by Springer! Feel free to check it out! ✨
+- **February 2026**: Our work [**Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation**](https://doi.org/10.1016/j.cviu.2026.104674) was accepted by the [**Computer Vision and Image Understanding (CVIU) Journal**](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding)! 🖐🏻🤌🏻
 
-- **October 2024**: We published a preprint of our work [Art2Mus](https://arxiv.org/abs/2410.04906), which was recently presented at the [AI4VA Workshop](https://sites.google.com/view/ai4vaeccv2024) during [ECCV 2024](https://eccv.ecva.net/) in Milan this September! 🇮🇹 😎
-- **August 2024**: Our work [Art2Mus](https://justivanr.github.io/publications/art2mus_publication/) was accepted at the [AI4VA Workshop](https://sites.google.com/view/ai4vaeccv2024) at [ECCV 2024](https://eccv.ecva.net/) in Milan! 🇮🇹
-- **July 2024**: Our work [Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations](https://justivanr.github.io/publications/recsys_publication/) was accepted at [RecSys 2024](https://recsys.acm.org/recsys24/) in Bari! 🇮🇹
-- **July 2024**: I **defended my Master’s thesis** in Deep Learning at the [University of Bari Aldo Moro](https://www.uniba.it/en)! 💻
-- **June 2024**: I attended [AILC](https://www.ai-lc.it/en/lectures-2/lectures-2024/) in Bari, where I deepened my knowledge of Computational Linguistics, Digital Humanities, and Large Language Models. 🇮🇹
+- **July 2025**: I had the opportunity to attend the [**International Computer Vision Summer School (ICVSS2025)**](https://icvss.dmi.unict.it/icvss2025/Home) in Scicli (Ragusa)! ☀️
+
+- **May 2025**: The proceedings of my work [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11) have been published by Springer! Feel free to check it out! ✨
+
+- **October 2024**: We published a preprint of our work [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://arxiv.org/abs/2410.04906), which was recently presented at the [**AI4VA Workshop**](https://sites.google.com/view/ai4vaeccv2024) during [**ECCV 2024**](https://eccv.ecva.net/) in Milan this September! 🇮🇹 😎
+
+- **August 2024**: Our work **Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation** was accepted at the [**AI4VA Workshop**](https://sites.google.com/view/ai4vaeccv2024) at [**ECCV 2024**](https://eccv.ecva.net/) in Milan! 🇮🇹
+
+- **July 2024**: Our work [**Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations**](https://dl.acm.org/doi/10.1145/3640457.3688137) was accepted at [**RecSys 2024**](https://recsys.acm.org/recsys24/) in Bari! 🇮🇹
+
+- **July 2024**: I **defended my Master’s thesis** in Deep Learning at the [**University of Bari Aldo Moro**](https://www.uniba.it/en)! 💻
+
+- **June 2024**: I attended [**AILC**](https://www.ai-lc.it/en/lectures-2/lectures-2024/) in Bari, where I deepened my knowledge of Computational Linguistics, Digital Humanities, and Large Language Models. 🇮🇹
 
 <div style="text-align:center;">
 
