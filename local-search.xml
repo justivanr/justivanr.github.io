@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>new hello world</title>
+    <link href="/new-hello-world/"/>
+    <url>/new-hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Testing</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>🎨 Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment 🎶</title>
     <link href="/art2mus_large/"/>
     <url>/art2mus_large/</url>
