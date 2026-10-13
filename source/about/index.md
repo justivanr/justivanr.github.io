@@ -98,6 +98,10 @@ When I'm not immersed in my research, you can find me enjoying one of these acti
 
 </div>
 
+- **September 2026**: I have started a 6-months research internship abroad at the [**MIS Laboratory at UPJV**](https://www.mis.u-picardie.fr/) (Amiens, France 🇫🇷), under the supervision of [**Prof. Florence Levé**](https://scholar.google.com/citations?user=0wuLEUwAAAAJ&hl=fr)!
+
+- **February 2026**: The preprint of our work [**Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment**](https://arxiv.org/abs/2602.17599) is now available on arXiv! 🎨🎹
+
 - **February 2026**: Our work [**Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation**](https://doi.org/10.1016/j.cviu.2026.104674) was accepted by the [**Computer Vision and Image Understanding (CVIU) Journal**](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding)! 🖐🏻🤌🏻
 
 - **July 2025**: I had the opportunity to attend the [**International Computer Vision Summer School (ICVSS2025)**](https://icvss.dmi.unict.it/icvss2025/Home) in Scicli (Ragusa)! ☀️
