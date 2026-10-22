@@ -868,13 +868,13 @@ i.iconfont {
     --sec-text-color: #ffffff;
     --post-text-color: #ffffff;
     --post-heading-color: #ffffff;
-    --post-link-color: #1daaff;
+    --post-link-color: #1f64a3;
     --link-hover-color: #0071B8;
-    --link-hover-bg-color: #364151;
+    --link-hover-bg-color: #1f64a3;
     --line-color: #435266;
     --navbar-bg-color: #1f3144;
-    --navbar-text-color: #d0d0d0;
-    --subtitle-color: #d0d0d0;
+    --navbar-text-color: #ffffff;
+    --subtitle-color: #ffffff;
     --scrollbar-color: #687582;
     --scrollbar-hover-color: #9da8b3;
     --button-bg-color: transparent;
@@ -906,13 +906,13 @@ i.iconfont {
     --sec-text-color: #ffffff;
     --post-text-color: #ffffff;
     --post-heading-color: #ffffff;
-    --post-link-color: #1daaff;
+    --post-link-color: #1f64a3;
     --link-hover-color: #0071B8;
-    --link-hover-bg-color: #364151;
+    --link-hover-bg-color: #1f64a3;
     --line-color: #435266;
     --navbar-bg-color: #1f3144;
-    --navbar-text-color: #d0d0d0;
-    --subtitle-color: #d0d0d0;
+    --navbar-text-color: #ffffff;
+    --subtitle-color: #ffffff;
     --scrollbar-color: #687582;
     --scrollbar-hover-color: #9da8b3;
     --button-bg-color: transparent;
@@ -1333,6 +1333,30 @@ i.iconfont {
     height: auto;
     margin: 0.25rem 0;
   }
+}
+html[data-user-color-scheme="dark"] #show-more-btn {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+.resource-link {
+  color: #fff !important;
+  fill: #fff !important;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+.resource-link i {
+  transition: color 0.25s ease;
+}
+.resource-link:hover {
+  color: #80bacb !important;
+  fill: #80cbc4 !important;
+  opacity: 0.9;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.resource-link:hover i {
+  color: #80cbc4 !important;
 }
 #valine.v[data-class=v] .status-bar,
 #valine.v[data-class=v] .veditor,
