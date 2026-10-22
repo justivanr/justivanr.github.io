@@ -13,29 +13,12 @@ date: 2024-11-03 18:43:20
     color: white;
     font-weight: bold;
   }
-  /* research: muted green */
-  .generative-ai          { background-color: hsl(150, 28%, 40%); }
-  .multimodal-dl          { background-color: hsl(138, 28%, 42%); }
-  .large-language-models  { background-color: hsl(124, 27%, 44%); }
-  .computer-vision        { background-color: hsl(100, 28%, 44%); }
-  /* hobbies: muted blue */
-  .music      { background-color: hsl(215, 34%, 48%); }
-  .videogames { background-color: hsl(208, 36%, 48%); }
-  .travelling { background-color: hsl(199, 38%, 46%); }
-  .learning   { background-color: hsl(190, 38%, 44%); }
   /* selected pubs: warm, toned down to match */
-  .pub1 { background-color: hsl(2, 42%, 52%); }
-  .pub2 { background-color: hsl(23, 50%, 54%); }
+  .pub1 { background-color: hsl(2, 42%, 52%);  }
+  .pub2 { background-color: hsl(23, 50%, 53%); }
   .pub3 { background-color: hsl(36, 52%, 52%); }
   /* ---------- Layout helpers ---------- */
   .center { text-align: center; }
-  .chip-row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
   /* Research Interests + Hobbies: two equal-height cards */
   .info-cards {
     display: flex;
@@ -82,15 +65,6 @@ date: 2024-11-03 18:43:20
     transition: transform 0.15s ease;
   }
   .tag:hover { transform: translateY(-2px); }
-  /* ---------- Contact links ---------- */
-  .contact-row {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin: 1em 0;
-  }
-  .contact-row a { font-weight: bold; text-decoration: none; }
   /* ---------- Selected publications ---------- */
   .pub-row {
     display: flex;
@@ -139,24 +113,22 @@ date: 2024-11-03 18:43:20
     font-weight: normal;
   }
   /* ---------- News ---------- */
-  #news { padding-left: 1.2em; }
-  #news li { margin-bottom: 0.8em; }
   .news-btn {
     display: none; /* shown by the script only when needed */
     margin: 10px auto 0;
     padding: 8px 20px;
     border: none;
     border-radius: 10px;
-    background-color: #2274A5;
+    background-color: #1f64a3;
     color: white;
     font-weight: bold;
     cursor: pointer;
   }
   .news-btn:hover { opacity: 0.85; }
   .koi { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-  .info-card:nth-child(1) { border-top: 4px solid #357a45; }
-  .info-card:nth-child(2) { border-top: 4px solid #1f64a3; }
-  .pub-chip { border-color: rgba(255, 255, 255, 0.55); } /* unchanged, just to be explicit */
+  .info-card:nth-child(1) { --section: #357a45; border-top: 4px solid var(--section); }
+  .info-card:nth-child(2) { --section: #1f64a3; border-top: 4px solid var(--section); }
+  .info-card .colorful-box { background-color: var(--section); }
 </style>
 
 <div style="text-align:center;">
@@ -165,30 +137,28 @@ Hello there! I’m Ivan Rinaldi, a **PhD student** at the University of Bari Ald
 
 In July 2024, I earned my **Master's degree** in Computer Science (AI curriculum) at the [University of Bari Aldo Moro](https://www.uniba.it/en). My thesis focused on **Generative AI**, specifically diffusion models and conditioned music generation from artworks.
 
-<!--  -->
 <div class="info-cards">
   <div class="info-card">
     <h2>Research Interests 🔍</h2>
     <p>The topics I spend most of my research time on.</p>
     <div class="tag-row">
-      <span class="colorful-box tag generative-ai">Generative AI 🌌</span>
-      <span class="colorful-box tag multimodal-dl">Multimodal Deep Learning 🧩</span>
-      <span class="colorful-box tag large-language-models">Large Language Models 🗣️</span>
-      <span class="colorful-box tag computer-vision">Computer Vision 👁️</span>
+      <span class="colorful-box tag">Generative AI 🌌</span>
+      <span class="colorful-box tag">Multimodal Deep Learning 🧩</span>
+      <span class="colorful-box tag">Large Language Models 🗣️</span>
+      <span class="colorful-box tag">Computer Vision 👁️</span>
     </div>
   </div>
   <div class="info-card">
     <h2>Hobbies 🕹️</h2>
     <p>When I’m not researching, I’m probably doing one of these.</p>
     <div class="tag-row">
-      <span class="colorful-box tag music">Music 🎸</span>
-      <span class="colorful-box tag videogames">Gaming 🎮</span>
-      <span class="colorful-box tag travelling">Travelling ✈️</span>
-      <span class="colorful-box tag learning">Learning new stuff 📚</span>
+      <span class="colorful-box tag">Music 🎸</span>
+      <span class="colorful-box tag">Gaming 🎮</span>
+      <span class="colorful-box tag">Travelling ✈️</span>
+      <span class="colorful-box tag">Learning new stuff 📚</span>
     </div>
   </div>
 </div>
-<!--  -->
 
 <h1 class="center">Selected Publications 📖</h1>
  
@@ -219,11 +189,11 @@ In July 2024, I earned my **Master's degree** in Computer Science (AI curriculum
 
 - **February 2026**: The preprint of our work [**Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment**](https://arxiv.org/abs/2602.17599) is now available on arXiv! 🎨🎹
 
-- **February 2026**: Our work, [**Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation**](https://doi.org/10.1016/j.cviu.2026.104674), was accepted for publication in the [**Computer Vision and Image Understanding (CVIU) Journal**](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding)! 🖐🏻🤌🏻
+- **February 2026**: Our work [**Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation**](https://doi.org/10.1016/j.cviu.2026.104674) was accepted for publication in the [**Computer Vision and Image Understanding (CVIU) Journal**](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding)! 🖐🏻🤌🏻
 
 - **July 2025**: I had the opportunity to attend the [**International Computer Vision Summer School (ICVSS2025)**](https://icvss.dmi.unict.it/icvss2025/Home) in Scicli (Ragusa), where I also presented a poster on my work [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11)! ☀️
 
-- **May 2025**: The proceedings of my work, [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11), have been published by Springer! Feel free to check it out! ✨
+- **May 2025**: The proceedings of [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11) have been published by Springer! Feel free to check it out! ✨
 
 - **October 2024**: We released a preprint of our work [**Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation**](https://arxiv.org/abs/2410.04906), which was recently presented at the [**AI4VA Workshop**](https://sites.google.com/view/ai4vaeccv2024) during [**ECCV 2024**](https://eccv.ecva.net/) in Milan this September! 🇮🇹 😎
 
@@ -272,4 +242,4 @@ Take a breather, watch the koi swim by, and let your thoughts flow like the ripp
 
 </div>
 
-![](img/koi.gif)
+<img class="koi" src="/img/koi.gif" alt="Koi fish swimming in a pond" loading="lazy">

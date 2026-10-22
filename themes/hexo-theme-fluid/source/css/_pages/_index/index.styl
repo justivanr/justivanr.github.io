@@ -128,3 +128,27 @@
   .index-excerpt
     height auto
     margin 0.25rem 0
+
+html[data-user-color-scheme="dark"] #show-more-btn
+  color: #ffffff !important
+  border-color: #ffffff !important
+
+.resource-link
+  color: white !important
+  fill: white !important
+  display: inline-block
+  text-decoration: none
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease
+
+  i
+    transition: color 0.25s ease
+
+  &:hover
+    color: #80bacb !important
+    fill: #80cbc4 !important
+    opacity: 0.9
+    transform: translateY(-2px)
+    text-decoration: none
+
+    i
+      color: #80cbc4 !important

@@ -73,35 +73,33 @@
   <% if (page.paper_url || page.arxiv_pdf || page.repo || page.example_res) { %>
     <div class="post-meta-row">
         <span class="post-meta">
-
             <% if (page.paper_url) { %>
-              <a href="<%- page.paper_url %>" target="_blank" rel="noopener" style="color:white !important; fill:white !important">
-                  <i class="fa-solid fa-file"></i>
-                  Paper
+              <a class="resource-link" href="<%- page.paper_url %>" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file"></i>
+                Paper
               </a>
             <% } %>
 
             <% if (page.arxiv_pdf) { %>
-              <a href="<%- page.arxiv_pdf %>" target="_blank" rel="noopener" style="color:white !important; fill:white !important">
-                  <i class="fa-solid fa-file-pdf"></i>
-                  PDF
+              <a class="resource-link" href="<%- page.arxiv_pdf %>" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i>
+                PDF
               </a>
             <% } %>
 
             <% if (page.repo) { %>
-              <a href="<%- page.repo %>" target="_blank" rel="noopener" style="color:white !important; fill:white !important">
+              <a class="resource-link" href="<%- page.repo %>" target="_blank" rel="noopener">
                 <i class="fab fa-github"></i>
                 Code
               </a>
             <% } %>
 
-          <% if (page.example_res) { %>
-              <a href="<%- page.example_res %>" target="_blank" rel="noopener" style="color:white !important; fill:white !important">
-                  <i class="fa-solid fa-music"></i>
-                  Results
+            <% if (page.example_res) { %>
+              <a class="resource-link" href="<%- page.example_res %>" target="_blank" rel="noopener">
+                <i class="fa-solid fa-music"></i>
+                Results
               </a>
             <% } %>
-          
         </span>
     </div>
   <% } %>
