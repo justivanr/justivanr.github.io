@@ -19,16 +19,16 @@
   <meta name="author" content="Ivan Rinaldi">
   <meta name="keywords" content="">
   
-    <meta name="description" content=".colorful-box {     padding: 10px;     border-radius: 10px;     display: inline-block;     color: white;   }   .generative-ai {     background-color: #20A39E;   }   .multimodal-dl {     background-">
+    <meta name="description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research (all">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About Me">
 <meta property="og:url" content="https://justivanr.github.io/about/index.html">
 <meta property="og:site_name" content="Ivan&#39;s Fooling Around">
-<meta property="og:description" content=".colorful-box {     padding: 10px;     border-radius: 10px;     display: inline-block;     color: white;   }   .generative-ai {     background-color: #20A39E;   }   .multimodal-dl {     background-">
+<meta property="og:description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research (all">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://justivanr.github.io/img/koi.gif">
 <meta property="article:published_time" content="2024-11-03T18:43:20.000Z">
-<meta property="article:modified_time" content="2026-10-13T10:17:54.999Z">
+<meta property="article:modified_time" content="2026-10-22T13:16:14.361Z">
 <meta property="article:author" content="Ivan Rinaldi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://justivanr.github.io/img/koi.gif">
@@ -318,114 +318,263 @@
 <article class="about-content page-content mt-5">
   <div class="markdown-body">
     <style>
+  /* ---------- Chips ---------- */
   .colorful-box {
-    padding: 10px;
+    padding: 12px !important;
     border-radius: 10px;
     display: inline-block;
     color: white;
+    font-weight: bold;
   }
-  .generative-ai {
-    background-color: #20A39E;
+  /* research (all >= 4.5:1 contrast with white text) */
+  .generative-ai { background-color: #f94144; }
+  .multimodal-dl { background-color: #f3722c; }
+  .large-language-models { background-color: #f8961e; }
+  .computer-vision { background-color: #f9c74f; }
+  /* hobbies */
+  .music { background-color: #90be6d; }
+  .videogames { background-color: #43aa8b; }
+  .travelling { background-color: #4d908e; }
+  .learning { background-color: #577590; }
+  /* selected pubs, added cc at the end for 80% opacity*/
+  .pub1 { background-color: #f3722c; }
+  .pub2 { background-color: #f6b049; }
+  .pub3 { background-color: #43aa8b; }
+  /* ---------- Layout helpers ---------- */
+  .center { text-align: center; }
+  .chip-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
   }
-  .multimodal-dl {
-    background-color: #662E9B;
+  /* Research Interests + Hobbies: two equal-height cards */
+  .info-cards {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 1.5em 0;
   }
-  .large-language-models {
-    background-color: #DB3069;
+  .info-card {
+    flex: 1 1 320px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 20px;
+    background: rgba(128, 128, 128, 0.07);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
-  .computer-vision {
-    background-color: #F86624;
+  .info-card h2 {
+    margin: 0 0 0.3em;
+    padding: 0;
+    border: none;
+    font-size: 1.4em;
   }
-
-  .music {
+  .info-card p { margin: 0 0 1em; opacity: 0.8; }
+  .tag-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 420px) {
+    .tag-row { grid-template-columns: 1fr; }
+  }
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.95em;
+    transition: transform 0.15s ease;
+  }
+  .tag:hover { transform: translateY(-2px); }
+  /* ---------- Contact links ---------- */
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 1em 0;
+  }
+  .contact-row a { font-weight: bold; text-decoration: none; }
+  /* ---------- Selected publications ---------- */
+  .pub-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pub-chip {
+    position: relative;
+    flex: 1 1 220px;
+    max-width: 320px;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.55);
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pub-chip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  /* link inside the chip: forced to look like plain white text, and
+     stretched so the whole chip is clickable */
+  .pub-chip a {
+    color: white !important;
+    text-decoration: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .pub-chip a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+  }
+  .pub-chip .venue {
+    display: block;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 0.85em;
+    font-weight: normal;
+  }
+  /* ---------- News ---------- */
+  #news { padding-left: 1.2em; }
+  #news li { margin-bottom: 0.8em; }
+  .news-btn {
+    display: none; /* shown by the script only when needed */
+    margin: 10px auto 0;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
     background-color: #2274A5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
   }
-  .videogames {
-    background-color: #C70039;
-  }
-  .travelling {
-    background-color: #900C3F;
-  }
-  .learning {
-    background-color: #581845;
-  }
+  .news-btn:hover { opacity: 0.85; }
+  .koi { max-width: 100%; height: auto; display: block; margin: 0 auto; }
 </style>
 
 <div style="text-align:center;">
 
-<p>Hello there! I’m Ivan Rinaldi, a <strong>PhD student</strong> at the University of Bari Aldo Moro, based in Bari (BA), Apulia, Italy. I am currently working in the <a target="_blank" rel="noopener" href="https://sites.google.com/site/cilabuniba/home">CILab</a> laboratory, pursuing a PhD on <strong>“Advanced Generative Models for Conversion between Images, Text, and Audio”</strong>, co-funded by <a target="_blank" rel="noopener" href="https://aivb.ai/en/home/">AIVB</a>.</p>
+<p>Hello there! I’m Ivan Rinaldi, a <strong>PhD student</strong> at the University of Bari Aldo Moro, based in Bari (BA), Apulia, Italy🇮 🇮🇹, and currently a visiting researcher in Amiens, France 🇫🇷. I am working in the <a target="_blank" rel="noopener" href="https://cilab.di.uniba.it/">CILab</a> laboratory, pursuing a PhD on <strong>“Advanced Generative Models for Conversion between Images, Text, and Audio”</strong>, co-funded by <a target="_blank" rel="noopener" href="https://aivb.ai/en/home/">AIVB</a>.</p>
 <p>In July 2024, I earned my <strong>Master’s degree</strong> in Computer Science (AI curriculum) at the <a target="_blank" rel="noopener" href="https://www.uniba.it/en">University of Bari Aldo Moro</a>. My thesis focused on <strong>Generative AI</strong>, specifically diffusion models and conditioned music generation from artworks.</p>
-<h2 id="Research-Interests-🔍"><a href="#Research-Interests-🔍" class="headerlink" title="Research Interests 🔍"></a>Research Interests 🔍</h2><p>My research interests include:</p>
-<div style="justify-content: center; margin-top: -0.8em; font-weight: bold; margin-top: 0.5em;">
-
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <div class="colorful-box generative-ai">
-      Generative AI 🌌
-    </div>
-    <div class="colorful-box multimodal-dl">
-      Multimodal Deep Learning 🧩
-    </div>
-  </div>
-  
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
-    <div class="colorful-box large-language-models">
-      Large Language Models 🗣️
-    </div>
-    <div class="colorful-box computer-vision">
-      Computer Vision 👁️
+<!--  -->
+<div class="info-cards">
+  <div class="info-card">
+    <h2>Research Interests 🔍</h2>
+    <p>The topics I spend most of my research time on.</p>
+    <div class="tag-row">
+      <span class="colorful-box tag generative-ai">Generative AI 🌌</span>
+      <span class="colorful-box tag multimodal-dl">Multimodal Deep Learning 🧩</span>
+      <span class="colorful-box tag large-language-models">Large Language Models 🗣️</span>
+      <span class="colorful-box tag computer-vision">Computer Vision 👁️</span>
     </div>
   </div>
-
+  <div class="info-card">
+    <h2>Hobbies 🕹️</h2>
+    <p>When I’m not researching, I’m probably doing one of these.</p>
+    <div class="tag-row">
+      <span class="colorful-box tag music">Music 🎸</span>
+      <span class="colorful-box tag videogames">Gaming 🎮</span>
+      <span class="colorful-box tag travelling">Travelling ✈️</span>
+      <span class="colorful-box tag learning">Learning new stuff 📚</span>
+    </div>
+  </div>
 </div>
+<!--  -->
 
-<h2 id="Hobbies-🕹️"><a href="#Hobbies-🕹️" class="headerlink" title="Hobbies 🕹️"></a>Hobbies 🕹️</h2><p>When I’m not immersed in my research, you can find me enjoying one of these activities.</p>
-<div style="justify-content: center; margin-top: -0.8em; font-weight: bold; margin-top: 0.5em;">
-  
-  <div class="colorful-box music">
-    Music 🎸
+<h1 class="center">Selected publications 📖</h1>
+ 
+<div class="pub-row">
+  <div class="colorful-box pub1 pub-chip">
+    <a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/3640457.3688137">Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations 🗣️</a>
+    <span class="venue">RecSys 2024</span>
   </div>
-
-  <div class="colorful-box videogames">
-    Gaming 🎮
+  <div class="colorful-box pub2 pub-chip">
+    <a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11">Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation 🎨🎹</a>
+    <span class="venue">AI4VA@ECCV 2024 · Springer 2025</span>
   </div>
-
-  <div class="colorful-box travelling">
-    Travelling ✈️
+  <div class="colorful-box pub3 pub-chip">
+    <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.cviu.2026.104674">Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation 🖐🏻</a>
+    <span class="venue">CVIU Journal · 2026</span>
   </div>
-
-  <div class="colorful-box learning">
-    Learning new stuff 📚
-  </div>
-
 </div>
 
 <h1 id="Stay-up-to-date-with-my-work-🚀"><a href="#Stay-up-to-date-with-my-work-🚀" class="headerlink" title="Stay up-to-date with my work! 🚀"></a>Stay up-to-date with my work! 🚀</h1></div>
 
+<div id="news">
+
 <ul>
-<li><p><strong>September 2026</strong>: I have started a 6-months research internship abroad at the <a target="_blank" rel="noopener" href="https://www.mis.u-picardie.fr/"><strong>MIS Laboratory at UPJV</strong></a> (Amiens, France 🇫🇷), under the supervision of <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=0wuLEUwAAAAJ&hl=fr"><strong>Prof. Florence Levé</strong></a>!</p>
+<li><p><strong>October 2026</strong>: Our work on audio analysis has been accepted for publication in the <a target="_blank" rel="noopener" href="https://link.springer.com/journal/11042"><strong>Multimedia Tools and Applications (MTAP) Journal</strong></a>! 🗣️</p>
+</li>
+<li><p><strong>September 2026</strong>: I started a six-month research internship abroad at the <a target="_blank" rel="noopener" href="https://www.mis.u-picardie.fr/"><strong>MIS Laboratory at UPJV</strong></a> (Amiens, France 🇫🇷), under the supervision of <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=0wuLEUwAAAAJ&hl=fr"><strong>Prof. Florence Levé</strong></a>!</p>
 </li>
 <li><p><strong>February 2026</strong>: The preprint of our work <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.17599"><strong>Art2Mus: Artwork-to-Music Generation via Visual Conditioning and Large-Scale Cross-Modal Alignment</strong></a> is now available on arXiv! 🎨🎹</p>
 </li>
-<li><p><strong>February 2026</strong>: Our work <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.cviu.2026.104674"><strong>Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation</strong></a> was accepted by the <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/journal/computer-vision-and-image-understanding"><strong>Computer Vision and Image Understanding (CVIU) Journal</strong></a>! 🖐🏻🤌🏻</p>
+<li><p><strong>February 2026</strong>: Our work, <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.cviu.2026.104674"><strong>Handscribe: A Gloss-Free Framework for Sign Language Translation and Gloss Sequence Generation</strong></a>, was accepted for publication in the <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/journal/computer-vision-and-image-understanding"><strong>Computer Vision and Image Understanding (CVIU) Journal</strong></a>! 🖐🏻🤌🏻</p>
 </li>
-<li><p><strong>July 2025</strong>: I had the opportunity to attend the <a target="_blank" rel="noopener" href="https://icvss.dmi.unict.it/icvss2025/Home"><strong>International Computer Vision Summer School (ICVSS2025)</strong></a> in Scicli (Ragusa)! ☀️</p>
+<li><p><strong>July 2025</strong>: I had the opportunity to attend the <a target="_blank" rel="noopener" href="https://icvss.dmi.unict.it/icvss2025/Home"><strong>International Computer Vision Summer School (ICVSS2025)</strong></a> in Scicli (Ragusa), where I also presented a poster on my work <a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11"><strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong></a>! ☀️</p>
 </li>
-<li><p><strong>May 2025</strong>: The proceedings of my work <a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11"><strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong></a> have been published by Springer! Feel free to check it out! ✨</p>
+<li><p><strong>May 2025</strong>: The proceedings of my work, <a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-031-92808-6_11"><strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong></a>, have been published by Springer! Feel free to check it out! ✨</p>
 </li>
-<li><p><strong>October 2024</strong>: We published a preprint of our work <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2410.04906"><strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong></a>, which was recently presented at the <a target="_blank" rel="noopener" href="https://sites.google.com/view/ai4vaeccv2024"><strong>AI4VA Workshop</strong></a> during <a target="_blank" rel="noopener" href="https://eccv.ecva.net/"><strong>ECCV 2024</strong></a> in Milan this September! 🇮🇹 😎</p>
+<li><p><strong>October 2024</strong>: We released a preprint of our work <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2410.04906"><strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong></a>, which was recently presented at the <a target="_blank" rel="noopener" href="https://sites.google.com/view/ai4vaeccv2024"><strong>AI4VA Workshop</strong></a> during <a target="_blank" rel="noopener" href="https://eccv.ecva.net/"><strong>ECCV 2024</strong></a> in Milan this September! 🇮🇹 😎</p>
 </li>
 <li><p><strong>August 2024</strong>: Our work <strong>Art2Mus: Bridging Visual Arts and Music through Cross-Modal Generation</strong> was accepted at the <a target="_blank" rel="noopener" href="https://sites.google.com/view/ai4vaeccv2024"><strong>AI4VA Workshop</strong></a> at <a target="_blank" rel="noopener" href="https://eccv.ecva.net/"><strong>ECCV 2024</strong></a> in Milan! 🇮🇹</p>
 </li>
 <li><p><strong>July 2024</strong>: Our work <a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/3640457.3688137"><strong>Instructing and Prompting Large Language Models for Explainable Cross-domain Recommendations</strong></a> was accepted at <a target="_blank" rel="noopener" href="https://recsys.acm.org/recsys24/"><strong>RecSys 2024</strong></a> in Bari! 🇮🇹</p>
 </li>
-<li><p><strong>July 2024</strong>: I <strong>defended my Master’s thesis</strong> in Deep Learning at the <a target="_blank" rel="noopener" href="https://www.uniba.it/en"><strong>University of Bari Aldo Moro</strong></a>! 💻</p>
+<li><p><strong>July 2024</strong>: I <strong>successfully defended my Master’s thesis</strong> in Deep Learning at the <a target="_blank" rel="noopener" href="https://www.uniba.it/en"><strong>University of Bari Aldo Moro</strong></a>! 💻</p>
 </li>
-<li><p><strong>June 2024</strong>: I attended <a target="_blank" rel="noopener" href="https://www.ai-lc.it/en/lectures-2/lectures-2024/"><strong>AILC</strong></a> in Bari, where I deepened my knowledge of Computational Linguistics, Digital Humanities, and Large Language Models. 🇮🇹</p>
+<li><p><strong>June 2024</strong>: I attended <a target="_blank" rel="noopener" href="https://www.ai-lc.it/en/lectures-2/lectures-2024/"><strong>AILC</strong></a> in Bari, where I deepened my knowledge of computational linguistics, digital humanities, and large language models! 🇮🇹</p>
 </li>
 </ul>
+</div>
+
+<div style="text-align:center;">
+  <button id="news-toggle" class="news-btn" type="button" aria-expanded="false"></button>
+</div>
+
+<script>
+(function () {
+  var K = 5; // number of news items always visible
+  var items = document.querySelectorAll('#news li');
+  var btn = document.getElementById('news-toggle');
+  if (!btn || items.length <= K) return;
+  var expanded = false;
+  function render() {
+    items.forEach(function (li, i) {
+      li.style.display = (expanded || i < K) ? '' : 'none';
+    });
+    btn.textContent = expanded ? 'Show less ▲' : 'Show ' + (items.length - K) + ' more ▼';
+    btn.setAttribute('aria-expanded', expanded);
+  }
+  btn.style.display = 'block';
+  btn.addEventListener('click', function () {
+    expanded = !expanded;
+    render();
+  });
+  render();
+})();
+</script>
+
 <div style="text-align:center;">
 
-<h2 id="🐚-With-that-It’s-all-by-my-side-🪸"><a href="#🐚-With-that-It’s-all-by-my-side-🪸" class="headerlink" title="🐚 With that, It’s all by my side! 🪸"></a>🐚 With that, It’s all by my side! 🪸</h2><p>Take a breather, watch the koi swim by, and let your thoughts flow like the ripples in the pond. You’ve earned it!</p>
+<h2 id="🐚-That’s-all-from-my-side-🪸"><a href="#🐚-That’s-all-from-my-side-🪸" class="headerlink" title="🐚 That’s all from my side! 🪸"></a>🐚 That’s all from my side! 🪸</h2><p>Take a breather, watch the koi swim by, and let your thoughts flow like the ripples in the pond. You’ve earned it!</p>
 </div>
 
 <p><img src="/img/koi.gif" srcset="/img/koi.gif" lazyload></p>
