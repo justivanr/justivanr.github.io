@@ -19,16 +19,16 @@
   <meta name="author" content="Ivan Rinaldi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research (all">
+    <meta name="description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research: mut">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About Me">
 <meta property="og:url" content="https://justivanr.github.io/about/index.html">
 <meta property="og:site_name" content="Ivan&#39;s Fooling Around">
-<meta property="og:description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research (all">
+<meta property="og:description" content="&#x2F;* ---------- Chips ---------- *&#x2F;   .colorful-box {     padding: 12px !important;     border-radius: 10px;     display: inline-block;     color: white;     font-weight: bold;   }   &#x2F;* research: mut">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://justivanr.github.io/img/koi.gif">
 <meta property="article:published_time" content="2024-11-03T18:43:20.000Z">
-<meta property="article:modified_time" content="2026-10-22T13:20:07.725Z">
+<meta property="article:modified_time" content="2026-10-22T14:05:39.572Z">
 <meta property="article:author" content="Ivan Rinaldi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://justivanr.github.io/img/koi.gif">
@@ -326,20 +326,20 @@
     color: white;
     font-weight: bold;
   }
-  /* research (all >= 4.5:1 contrast with white text) */
-  .generative-ai { background-color: #f94144; }
-  .multimodal-dl { background-color: #f3722c; }
-  .large-language-models { background-color: #f8961e; }
-  .computer-vision { background-color: #f9c74f; }
-  /* hobbies */
-  .music { background-color: #90be6d; }
-  .videogames { background-color: #43aa8b; }
-  .travelling { background-color: #4d908e; }
-  .learning { background-color: #577590; }
-  /* selected pubs, added cc at the end for 80% opacity*/
-  .pub1 { background-color: #f3722c; }
-  .pub2 { background-color: #f6b049; }
-  .pub3 { background-color: #43aa8b; }
+  /* research: muted green */
+  .generative-ai          { background-color: hsl(150, 28%, 40%); }
+  .multimodal-dl          { background-color: hsl(138, 28%, 42%); }
+  .large-language-models  { background-color: hsl(124, 27%, 44%); }
+  .computer-vision        { background-color: hsl(100, 28%, 44%); }
+  /* hobbies: muted blue */
+  .music      { background-color: hsl(215, 34%, 48%); }
+  .videogames { background-color: hsl(208, 36%, 48%); }
+  .travelling { background-color: hsl(199, 38%, 46%); }
+  .learning   { background-color: hsl(190, 38%, 44%); }
+  /* selected pubs: warm, toned down to match */
+  .pub1 { background-color: hsl(2, 42%, 52%); }
+  .pub2 { background-color: hsl(23, 50%, 54%); }
+  .pub3 { background-color: hsl(36, 52%, 52%); }
   /* ---------- Layout helpers ---------- */
   .center { text-align: center; }
   .chip-row {
@@ -388,7 +388,7 @@
     justify-content: center;
     text-align: center;
     padding: 10px 16px;
-    border-radius: 999px;
+    border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     font-size: 0.95em;
@@ -420,7 +420,7 @@
     padding: 14px 16px;
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.55);
-    border-radius: 18px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
@@ -467,6 +467,9 @@
   }
   .news-btn:hover { opacity: 0.85; }
   .koi { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .info-card:nth-child(1) { border-top: 4px solid #357a45; }
+  .info-card:nth-child(2) { border-top: 4px solid #1f64a3; }
+  .pub-chip { border-color: rgba(255, 255, 255, 0.55); } /* unchanged, just to be explicit */
 </style>
 
 <div style="text-align:center;">
@@ -498,7 +501,7 @@
 </div>
 <!--  -->
 
-<h1 class="center">Selected publications 📖</h1>
+<h1 class="center">Selected Publications 📖</h1>
  
 <div class="pub-row">
   <div class="colorful-box pub1 pub-chip">
@@ -515,7 +518,7 @@
   </div>
 </div>
 
-<h1 id="Stay-up-to-date-with-my-work-🚀"><a href="#Stay-up-to-date-with-my-work-🚀" class="headerlink" title="Stay up-to-date with my work! 🚀"></a>Stay up-to-date with my work! 🚀</h1></div>
+<h1 id="The-Latest-from-Me"><a href="#The-Latest-from-Me" class="headerlink" title="The Latest from Me"></a>The Latest from Me</h1></div>
 
 <div id="news">
 
